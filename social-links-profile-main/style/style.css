@@ -1,0 +1,97 @@
+/* Helpers */
+.mg-sm {
+  margin-bottom: 1rem;
+}
+.mg-md {
+  margin-bottom: 2rem;
+}
+.mg-lg {
+  margin-bottom: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 8%);
+  text-align: center;
+}
+.container {
+  width: 30vw;
+
+  background-color: hsl(0, 0%, 12%);
+  margin: 8rem auto;
+  border-radius: 2rem;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.address {
+  color: hsl(75, 94%, 57%);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.text {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.link-box {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.link-box:active {
+  background-color: hsl(75, 94%, 57%);
+}
+
+.link-box:active .link {
+  color: hsl(0, 0%, 12%);
+}
+
+.link {
+  color: hsl(0, 0%, 100%, 0.8);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Media queries */
+@media (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+  .container {
+    width: 35vw;
+  }
+}
