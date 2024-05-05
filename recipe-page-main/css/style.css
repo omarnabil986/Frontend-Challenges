@@ -1,0 +1,132 @@
+/* UTILITIES */
+.mg-sm {
+  margin-bottom: 2rem;
+}
+.mg-md {
+  margin-bottom: 3rem;
+}
+.mg-lg {
+  margin-bottom: 4rem;
+}
+
+/* GLOPAL STYLING */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  /* font-family: 'Young Serif', serif; */
+  background-color: hsl(30, 54%, 90%);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.container {
+  width: 70%;
+  /* height: 100rem; */
+  background-color: #fff;
+  margin: 7rem auto;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+/* HERO SECTION */
+.hero-img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.heading-1 {
+  font-family: "Young Serif", serif;
+  letter-spacing: 2px;
+  color: hsl(24, 5%, 18%);
+}
+
+.hero-text {
+  color: hsl(30, 10%, 34%);
+}
+/*  PREPARATION TIME PART*/
+
+.prep-time-box {
+  background-color: hsl(332, 68%, 96%);
+  padding: 4rem;
+  color: hsl(30, 10%, 34%);
+  border-radius: 2rem;
+}
+
+.heading-3 {
+  color: hsl(332, 51%, 32%);
+}
+/* LIST */
+.list {
+  margin-bottom: 3rem;
+}
+.list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.list li {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.6;
+}
+
+.list li p {
+  position: relative;
+  left: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.list li span {
+  font-weight: 700;
+}
+/* INGREDIENTS PART */
+section {
+  margin-bottom: 3rem;
+}
+.section-ingredients,
+.section-instructions {
+  border-bottom: 1px solid #ccc;
+}
+.heading-2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+/* INSTRUCTIONS PART */
+/* Nutrition PART */
+.nutrition-text {
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 2rem;
+}
+
+.nutri-box {
+  color: hsl(30, 10%, 34%);
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+
+  position: relative;
+}
+.nutri-text {
+  margin-bottom: 1rem;
+}
+.nutri-num {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+
+  position: absolute;
+  left: 35%;
+}

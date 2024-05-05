@@ -1,0 +1,14 @@
+@media (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
+  .hero-img {
+    border-radius: 0;
+    transform: scale(1.25);
+  }
+
+  .container {
+    overflow: hidden;
+    padding-top: 0;
+  }
+}
