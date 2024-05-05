@@ -1,0 +1,11 @@
+.heading-1 {
+  &__light {
+    color: hsl(241, 100%, 89%);
+  }
+
+  &__dark {
+    color: #000;
+    align-self: flex-start;
+    margin-left: 3rem;
+  }
+}

@@ -1,0 +1,172 @@
+// HELPERS
+.mg-hg {
+  margin-bottom: 4rem;
+}
+.mg-lg {
+  margin-bottom: 3rem;
+}
+.mg-md {
+  margin-bottom: 2rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  max-width: 50vw;
+  margin: 8rem auto;
+  border-radius: 3.5rem;
+  overflow: hidden;
+  box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.result {
+  padding: 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  &__box {
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    &--1 {
+      background-color: rgba(255, 87, 87, 0.1);
+      color: #f55;
+    }
+    &--2 {
+      background-color: rgba(255, 176, 31, 0.1);
+      color: #ffb21e;
+    }
+    &--3 {
+      background-color: rgba(0, 189, 145, 0.1);
+      color: #00bb8f;
+    }
+    &--4 {
+      background-color: rgba(17, 37, 212, 0.1);
+      color: #1125d6;
+    }
+  }
+}
+
+.subject {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 1rem;
+  }
+}
+
+.subject__name {
+  margin-right: auto;
+}
+
+.summary__degree {
+  color: #000;
+  margin-left: auto;
+
+  span {
+    color: #999;
+  }
+}
+.circle {
+  height: 20rem;
+  width: 20rem;
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__score {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: hsl(241, 100%, 89%);
+  }
+}
+
+.degree {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+  &__text {
+    text-align: center;
+    width: 65%;
+    font-weight: 500;
+    font-size: 2rem;
+    color: hsl(241, 100%, 89%);
+  }
+}
+//////////////////BUTTON
+.btn {
+  width: 80%;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
