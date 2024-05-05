@@ -1,0 +1,137 @@
+/* Helpers */
+.mg-sm {
+  margin-bottom: 0.5rem;
+}
+.mg-md {
+  margin-bottom: 1rem;
+}
+.mg-lg {
+  margin-bottom: 2rem;
+}
+
+/*  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(217, 54%, 11%);
+  font-weight: 300;
+}
+
+/* Container */
+.container {
+  width: 25vw;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 2rem;
+  margin: 8rem auto;
+  padding: 2rem;
+
+  box-shadow: 0 0 3rem rgb(0, 0, 0, 0.7);
+  box-shadow: 0 0 6rem rgb(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+}
+/* .img {
+  width: 100%;
+  border-radius: 2rem;
+} */
+.heading-1 {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.text {
+  color: hsl(215, 51%, 70%);
+}
+
+/* Box */
+.box {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 3rem;
+}
+.eth {
+  margin-right: auto;
+  color: hsl(178, 100%, 50%);
+
+  display: flex;
+  align-items: center;
+}
+.eth-icon {
+  margin-right: 0.5rem;
+}
+.time-icon {
+  margin-right: 0.5rem;
+}
+.time {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+}
+/* Creation  */
+.creation-box {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  align-items: center;
+}
+.creation-img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 2rem;
+}
+
+strong {
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+/* Active state */
+.heading-1:active,
+.creation-text strong:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.img2 {
+  background-image: url(../images/image-equilibrium.jpg);
+  height: 35rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.img2:active {
+  background-image: linear-gradient(
+    rgba(0, 255, 247, 0.5),
+    url(../images/image-equilibrium.jpg)
+  );
+  z-index: 2;
+}
+/* 
+Media queries */
+@media (max-width: 25em) {
+  html {
+    font-size: 30%;
+  }
+  .container {
+    width: 40vw;
+  }
+}
