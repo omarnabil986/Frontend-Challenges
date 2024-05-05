@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #090b1a; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 10rem auto;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  width: 75%; }
+
+.img-box {
+  background-image: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url(../images/image-header-desktop.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.text-box {
+  background-color: #1b1938;
+  padding: 8rem;
+  display: grid; }
+
+.heading-1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff; }
+  .heading-1 span {
+    color: #aa5cdb; }
+
+.paragraph {
+  width: 90%;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6; }
+
+.stats {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+.stat {
+  grid-row: 2 / 3; }
+  .stat__num {
+    grid-row: 1/2;
+    font-size: 2rem;
+    font-weight: 700; }
+  .stat__text {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
