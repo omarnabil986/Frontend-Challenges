@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 144rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+
+  position: relative;
+}
+.pattern-bottom,
+.pattern-top {
+  position: absolute;
+
+  z-index: -1;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 6rem;
+  grid-column-gap: 3rem;
+}
+/* **********************************HEADER******************************************************** */
+.header-box {
+  grid-column: span 3;
+}
+.heading-primary {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  font-size: 6.4rem;
+  letter-spacing: -1.75px;
+  width: 80%;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+}
+.header-text {
+  color: hsl(303, 10%, 53%);
+  width: 80%;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+/* **********************************RATING******************************************************** */
+.rating-box {
+  grid-column: span 3;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rating-department {
+  background-color: hsl(300, 24%, 96%);
+  width: 80%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.rating-department--2 {
+  align-self: center;
+}
+.rating-department--3 {
+  align-self: flex-end;
+}
+.rating-text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+/* ********************************** TESTIMONIALS************************************ */
+
+.testimonial-box {
+  grid-row: 2;
+  grid-column: span 2;
+  padding: 3rem;
+  background-color: hsl(300, 43%, 22%);
+  font-weight: 500;
+  grid-row-gap: 2rem;
+
+  display: grid;
+  grid-template-columns: 20fr 80fr;
+}
+.testimonial-img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  grid-row: 1;
+}
+.testimonial-name {
+  color: white;
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -1.5rem;
+}
+.testimonial-verified {
+  color: hsl(333, 80%, 67%);
+  grid-row: 1;
+  grid-column: 2;
+  transform: translateY(2rem);
+  margin-left: -1.5rem;
+}
+.testimonial-text {
+  color: white;
+  grid-column: span 2;
+  line-height: 1.6;
+}
+
+.testimonial-box--1,
+.testimonial-box--2,
+.testimonial-box--3 {
+  border-radius: 1.5rem;
+}
+.testimonial-box--2 {
+  transform: translateY(2rem);
+}
+.testimonial-box--3 {
+  transform: translateY(4rem);
+}
